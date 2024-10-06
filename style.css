@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Merriweather;
+    overflow: auto; 
+    scrollbar-width: none; 
+    transition: all ease-in 0.4s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('a1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.container .header{
+    width: 100%;
+    padding: 0.5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 1000;
+    background-color:rgb(255, 192, 0);
+    box-shadow: 0px 0px 8px black;
+}
+.container .header h1{
+    background:linear-gradient(to right,yellow,white,yellow);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all ease-in-out 0.5s;
+}
+.container .header h1:hover{
+    width: 60px;
+    height: 40px;
+    background:url('ram.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.container .header .links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.container .header .links a{
+    text-decoration: none;
+    color: white;
+    transition: all ease-in-out 0.4s;
+    font-size: 20px;
+}
+.container .header .links a:hover{
+    color: red;
+    font-size: 20px;
+}
+.container .header .links button{
+    padding: 10px 15px;
+    background-color: orangered;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.container .header .links button:hover{
+    background-color: white;
+    color: orangered;
+}
+.aboutClass, .contactClass{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(40deg, orange, yellow);
+}
+.aboutClass h1{
+    padding: 0px 2%;
+    padding-top: 5%;
+    color: white;
+}
+.aboutClass .history h2{
+    color: white;
+    padding: 2% 2%;
+}
+.aboutClass .history p{
+    color: white;
+    padding: 0% 2%;
+    font-size: 20px;
+}
+.aboutClass .history h3{
+    color: white;
+    padding: 2% 2%; 
+    font-size: 20px;   
+}
+.aboutClass .history h4{
+    font-size: 18px;
+}
+.aboutClass .history .transport{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    gap: 20px;
+}
+.aboutClass .history .transport .part1{
+    width: 350px;
+    height: 220px;
+    margin-left: 5%;
+}
+.aboutClass .history .transport .part1 .step1{
+    width: 100%;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0% 2%;
+
+}
+.aboutClass .history .transport .part1 .step1 h4{
+    color: white;
+}
+.aboutClass .history .transport .part1 .step2{
+    width: 100%;
+    height:150px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+/* contact Class */
+.contactClass h1{
+    padding: 0px 2%;
+    padding-top: 4%;
+    color: white;
+}
+.contactClass .history h2{
+    color: white;
+    padding: 2% 2%;
+}
+.contactClass .history p{
+    color: white;
+    padding: 0% 2%;
+    font-size: 20px;
+}
+.contactClass .history h3{
+    color: white;
+    padding: 2% 2%;    
+}
+.contactClass .contactinfo{
+    padding: 2% 2%;
+    margin-top: 1%;
+}
+.contactClass .contactinfo h2{
+    color: white;
+}
+.contactClass .contactinfo p{
+    color: white;
+    padding: 2% 0%;
+    font-size: 20px;
+}
+.contactClass .general h2{
+    color: white;
+    padding: 0px 2%;
+}
+.contactClass .general p{
+    color: white;
+    padding: 2% 2%;
+    font-size: 20px;
+}
+
+/* Image Class */
+.imgClass{
+    width: 100%;
+    height: 120vh;
+    background:linear-gradient(40deg, orange, yellow);
+}
+.imgClass h1{
+    padding: 4% 2%;
+    color: white;
+}
+.imgClass .boxs{
+    width: 85%;
+    height: 80%;
+    margin: -10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+.imgClass .boxs .box{
+    width: 300px;
+    height: 300px;
+}
+.imgClass .boxs .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+.imgClass .boxs .box img:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px orangered,
+                            0px 0px 8px rgb(15, 13, 13);
+    padding: 10px;
+}
+
+/*Using JS*/
+.fixed-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: orangered;
+    box-shadow: 0px 0px 8px black;
+    background-color: rgb(255, 255, 56);
+}
+.fixed-top h1{
+    background:linear-gradient(to right,orangered,orange,orangered);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all ease-in-out 0.5s;
+}
+.fixed-top h1:hover{
+    width: 60px;
+    height: 40px;
+    background:url('ram.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.fixed-top .links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.fixed-top .links a{
+    text-decoration: none;
+    color: orangered;
+    transition: all ease-in-out 0.4s;
+    font-size: 20px;
+}
+.fixed-top .links a:hover{
+    color: orange;
+}
+.fixed-top .links button{
+    padding: 10px 15px;
+    background-color: orangered;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.fixed-top .links button:hover{
+    background-color: rgb(244, 187, 68);
+    color: white;
+}
+.loginClass {
+    width: 100%;
+    height: 100vh;
+    background: url('a1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.loginClass::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: -1;
+}
+.loginClass h1{
+    padding: 4% 4%;
+    color: white;
+}
+.loginClass .panel{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(225,225,225,0.78);
+    border-radius: 10px;
+    z-index: 5;
+}
+.loginClass .panel h2{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+.loginClass .panel .inputField{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 10px;
+}
+.loginClass .panel .inputField input{
+    width: 90%;
+    height: 20%;
+    font-size: 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid orangered;
+    outline: 0;
+    background-color: transparent;
+}
+.loginClass .panel .inputField input:hover{
+    border-bottom: 2px solid white;
+}
+.loginClass .panel .inputField button{
+    width: 90%;
+    height: 20%;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    background-color: orangered;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.loginClass .panel .inputField button:hover{
+    border: 2px solid orangered;
+    color: orangered;
+    background: white;
+}
+/*custom Cursor*/
+.customCursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 50px red;
+    pointer-events: none; 
+    transition: all ease-in 0.1s;
+    z-index: 10000; 
+}
+.footer{
+    width: 100%;
+    padding: 16px;
+    background: orange;
+    text-align: center;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1% 2%;
+    }
+    .header .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .aboutClass, .contactClass {
+        height: auto;
+        padding: 5% 2%;
+    }
+    .aboutClass h1, .contactClass h1, .imgClass h1{
+        font-size: 25px;
+    }
+    .aboutClass .history h2, .contactClass .history h2, .imgClass h2{
+        font-size: 20px;
+    }
+    .aboutClass .history p, .contactClass .history p, .imgClass h2{
+        font-size: 15px;
+    }
+    .aboutClass .history .transport {
+        flex-direction: column;
+    }
+    .loginClass .panel {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .imgClass {
+        height: auto;
+    }
+    .imgClass .boxs {
+        gap: 5%;
+    }
+}
